@@ -1,8 +1,13 @@
-import type { Config } from "tailwindcss";
-
-const config = {
+/** @type {import('tailwindcss').Config} */
+module.exports = {
 	darkMode: ["class"],
-	content: ["./pages/**/*.{ts,tsx}", "./components/**/*.{ts,tsx}", "./app/**/*.{ts,tsx}", "./src/**/*.{ts,tsx}"],
+	content: [
+		"./pages/**/*.{ts,tsx}",
+		"./components/**/*.{ts,tsx}",
+		"./entities/**/*.{ts,tsx}",
+		"./app/**/*.{ts,tsx}",
+		"./src/**/*.{ts,tsx}",
+	],
 	prefix: "",
 	theme: {
 		container: {
@@ -47,6 +52,7 @@ const config = {
 					DEFAULT: "hsl(var(--card))",
 					foreground: "hsl(var(--card-foreground))",
 				},
+				warning: "yellow",
 			},
 			borderRadius: {
 				lg: "var(--radius)",
@@ -70,6 +76,4 @@ const config = {
 		},
 	},
 	plugins: [require("tailwindcss-animate")],
-} satisfies Config;
-
-export default config;
+};
