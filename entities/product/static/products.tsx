@@ -5,7 +5,7 @@ interface IProductUI extends Pick<IProductUI, "title" | "description"> {
 	icon: ReactNode;
 }
 
-export const PRODCUCTS: IProductUI[] = [
+export const PRODUCTS: IProductUI[] = [
 	{
 		title: "Chat AI",
 		description: "Спитай все що завгодно",
