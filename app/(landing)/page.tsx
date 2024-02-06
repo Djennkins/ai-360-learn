@@ -2,6 +2,7 @@ import { Button } from "@/components/ui/button";
 import ProductsLists from "@/entities/product/ui/ProductsLists";
 import { ArrowRight } from "lucide-react";
 import Link from "next/link";
+import { ROUTES } from "../config/routes";
 
 export default function Home() {
 	return (
@@ -11,7 +12,7 @@ export default function Home() {
 				<div>
 					<ProductsLists />
 				</div>
-				<Link href="/cabinet/dashboard">
+				<Link href={ROUTES.cabinet.dashboard}>
 					<Button className="flex gap-2">
 						Спробувати PROMOTICH 360
 						<ArrowRight />
