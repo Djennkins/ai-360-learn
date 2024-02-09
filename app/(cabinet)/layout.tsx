@@ -9,7 +9,7 @@ interface ICabinetLayoutProps {
 
 const CabinetLayout: FC<ICabinetLayoutProps> = ({ children }) => {
 	return (
-		<div className="flex">
+		<div className="flex flex-col md:flex-row">
 			<Sheet>
 				<div className="hidden md:block bg-blue-950 text-white min-h-screen p-4 w-[300px]">
 					<CabinetList />
